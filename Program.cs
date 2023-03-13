@@ -53,7 +53,7 @@ namespace sudokuCLI
              while (!sr.EndOfStream)
              {
                  sor = sr.ReadLine();
-                 Feladvany f = new Feladvany(sor);   // sor ---> Osztaly.cs-ben ....konstruktor beillesztése
+                 Feladvany f = new Feladvany(sor);          // sor ---> Osztaly.cs-ben ....konstruktor beillesztése
                  feladvanyok.Add(f);
              }
              sr.Close();  
@@ -69,9 +69,9 @@ namespace sudokuCLI
 
              for (int i = 0; i < feladvanyok.Count; i++)
              {
-                Console.WriteLine($"{i}. feladavány mérete: {feladvanyok[i].Meret}");   // Meret ---> Osztaly.cs-ben
-                Console.WriteLine(feladvanyok[i].Kezdo);                        // Kezdo ---> Osztaly.cs-ben
-                feladvanyok[i].Kirajzol();                              // Kirajzol ---> Osztaly.cs-ben
+                Console.WriteLine($"{i}. feladavány mérete: {feladvanyok[i].Meret}");       // Meret ---> Osztaly.cs-ben
+                Console.WriteLine(feladvanyok[i].Kezdo);                              // Kezdo ---> Osztaly.cs-ben
+                feladvanyok[i].Kirajzol();                                     // Kirajzol ---> Osztaly.cs-ben
                 Console.WriteLine(new String('─',80));
              }
              Console.WriteLine($" 3. feladat: Beolvasva {feladvanyok.Count} feladvány."); 
